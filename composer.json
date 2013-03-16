@@ -1,0 +1,31 @@
+{
+    "name": "euphio/eph-chartbeat",
+    "description": "A Chartbeat module for Zend Framework 2",
+    "type": "library",
+    "keywords": [
+        "zf2",
+        "chartbeat"
+    ],
+    "homepage": "https://github.com/euphio/EphChartbeat",
+    "license": "BSD",
+    "authors": [
+        {
+        "name": "Andy Robinson",
+        "email": "andy@euphio.co.uk",
+        "homepage": "http://www.euphio.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zend-eventmanager": "2.*",
+        "zendframework/zend-mvc": "2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "EphChartbeat": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
