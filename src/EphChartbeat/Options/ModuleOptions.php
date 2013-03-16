@@ -108,7 +108,7 @@ class ModuleOptions extends AbstractOptions
     }
 
     /**
-     * Sets wether Chartbeat should use cookies
+     * Sets whether Chartbeat should use cookies
      *
      * @param boolean $noCookies
      */
@@ -118,7 +118,7 @@ class ModuleOptions extends AbstractOptions
     }
 
     /**
-     * Returns wether Chartbeat should use cookies
+     * Returns whether Chartbeat should use cookies
      *
      * @return boolean
      */
@@ -168,7 +168,7 @@ class ModuleOptions extends AbstractOptions
     }
 
     /**
-     * Sets wether to the canonical path instead of the actual URL
+     * Sets whether to the canonical path instead of the actual URL
      *
      * @param boolean $useCanonical
      */
@@ -178,7 +178,7 @@ class ModuleOptions extends AbstractOptions
     }
 
     /**
-     * Returns wether to the canonical path instead of the actual URL
+     * Returns whether to the canonical path instead of the actual URL
      *
      * @return boolean
      */
