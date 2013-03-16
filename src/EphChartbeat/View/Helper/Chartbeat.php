@@ -95,7 +95,17 @@ class Chartbeat extends AbstractHelper
                       . '_sf_async_config.domain = "' . $this->getOptions()->getDomain() . '";';
 
         //Add advanced options
-        // @TODO implement advenced configuration
+        if ($this->getOptions()->getNoCookies()) {
+            $inlineScript .= '_sf_async_config.noCookies = true;' . PHP_EOL;
+        }
+
+        if ($this->getOptions()->getUseCanonical()) {
+            $inlineScript .= '_sf_async_config.useCanonical = true;' . PHP_EOL;
+        }
+
+        if ($this->getOptions()->getPath() !== '') {
+            $inlineScript .= '_sf_async_config.path = "' . $this->getOptions()->getPath() . '";' . PHP_EOL;
+        }
 
         // Append Standard Chartbeat Script
         $inlineScript .= '(function(){' . PHP_EOL
