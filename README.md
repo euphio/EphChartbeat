@@ -15,7 +15,7 @@ First, add the following line into your `composer.json` file:
 
 ```json
 "require": {
-	"euphio/eph-chartbeat": ">=0.2"
+	"euphio/eph-chartbeat": ">=0.1"
 }
 ```
 
