@@ -31,8 +31,6 @@ return array(
 );
 ```
 
-Create directory `data/DoctrineTools/Migrations` and make sure your application has write access to it.
-
 Configuration
 -------------
 
