@@ -58,7 +58,7 @@ class Chartbeat extends AbstractHelper
     protected $options;
 
     /**
-     * Keeps track of wether the view helper has previously been renderred
+     * Keeps track of whether the view helper has previously been renderred
      *
      * @var bool
      */
@@ -92,7 +92,7 @@ class Chartbeat extends AbstractHelper
         // Create Chartbeat configuration settings
         $inlineScript = 'var _sf_async_config={};' . PHP_EOL
                       . '_sf_async_config.uid = ' . $this->getOptions()->getUid() . ';' .PHP_EOL
-                      . '_sf_async_config.domain = "' . $this->getOptions()->getDomain() . '";';
+                      . '_sf_async_config.domain = "' . $this->getOptions()->getDomain() . '";' . PHP_EOL;
 
         //Add advanced options
         if ($this->getOptions()->getNoCookies()) {
@@ -154,7 +154,7 @@ class Chartbeat extends AbstractHelper
     }
 
     /**
-     * Sets wether the script has been renderred
+     * Sets whether the script has been renderred
      *
      * @param boolean $rendered
      */
@@ -164,7 +164,7 @@ class Chartbeat extends AbstractHelper
     }
 
     /**
-     * Returns wether the script has been renderred
+     * Returns whether the script has been renderred
      *
      * @return boolean
      */
