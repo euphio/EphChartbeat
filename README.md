@@ -40,11 +40,11 @@ The following settings represent the configuration variables found at: http://ch
 <?php
 return array(
     'chartbeat' => array(
-        'domain'        => 'yourdomain.com',  // Your domain
+        'domain'        => 'yourdomain.com',  // Your Domain
         'no_cookies'    => false,             // Disable Cookies?
-        'path'          => '',                // Path Override
-        'uid'           => '1234',            // Your user id
-        'use_canonical' => false              // Use Canonical links?
+        'path'          => '',                // Path override
+        'uid'           => '1234',            // Your User id
+        'use_canonical' => false              // Use canonical links?
     ),
 );
 ```
