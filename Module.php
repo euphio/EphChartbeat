@@ -97,7 +97,8 @@ class Module
                 // A view Helper for Chartbeat
                 'chartbeat' => function($sm) {
                     // Grab Configuration
-                    $config = $sm->get('config');
+                    $serviceLocator = $sm->getServiceLocator();
+                    $config = $serviceLocator->get('config');
                     $config = $config['chartbeat'];
 
                     // Create Options Object
