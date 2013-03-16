@@ -99,22 +99,22 @@ class Chartbeat extends AbstractHelper
 
         // Append Standard Chartbeat Script
         $inlineScript .= '(function(){' . PHP_EOL
-                       . '  function loadChartbeat() {'
-                       . '      window._sf_endpt=(new Date()).getTime();'
-                       . '      var e = document.createElement("script");'
-                       . '      e.setAttribute("language", "javascript");'
-                       . '      e.setAttribute("type", "text/javascript");'
-                       . '      e.setAttribute("src",'
+                       . '  function loadChartbeat() {' . PHP_EOL
+                       . '      window._sf_endpt=(new Date()).getTime();' . PHP_EOL
+                       . '      var e = document.createElement("script");' . PHP_EOL
+                       . '      e.setAttribute("language", "javascript");' . PHP_EOL
+                       . '      e.setAttribute("type", "text/javascript");' . PHP_EOL
+                       . '      e.setAttribute("src",' . PHP_EOL
                        . '          (("https:" == document.location.protocol) ?'
-                       . '              "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" :'
-                       . '              "http://static.chartbeat.com/") +'
-                       . '              "js/chartbeat.js");'
-                       . '      document.body.appendChild(e);'
-                       . '  }'
-                       . '  var oldonload = window.onload;'
-                       . '  window.onload = (typeof window.onload != "function") ?'
-                       . '   loadChartbeat : function() { oldonload(); loadChartbeat(); };'
-                       . '})();';
+                       . '              "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" :' . PHP_EOL
+                       . '              "http://static.chartbeat.com/") +' . PHP_EOL
+                       . '              "js/chartbeat.js");' . PHP_EOL
+                       . '      document.body.appendChild(e);' . PHP_EOL
+                       . '  }' . PHP_EOL
+                       . '  var oldonload = window.onload;' . PHP_EOL
+                       . '  window.onload = (typeof window.onload != "function") ?' . PHP_EOL
+                       . '   loadChartbeat : function() { oldonload(); loadChartbeat(); };' . PHP_EOL
+                       . '})();' . PHP_EOL;
 
         // Append To helper
         $this->view->plugin('InlineScript')->appendScript($inlineScript);
